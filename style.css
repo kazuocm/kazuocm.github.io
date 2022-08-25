@@ -32,6 +32,10 @@ h1 {
     color: purple;
 }
 
+.links > a > img {
+  width: 30px
+}
+
 footer {
     background-color: midnightblue;
     color: white;
