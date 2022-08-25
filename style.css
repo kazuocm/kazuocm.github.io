@@ -16,7 +16,7 @@ h1 {
   display: inline-block;
   margin: 0;
   color: white;
-  font-family: "Silkscreen", "Courier new";
+  font-family: "Kanit", sans-serif;
 }
 
 .links > a {
@@ -75,18 +75,9 @@ img {
   transition: all 0.2s ease-in-out;
 }
 
-img:hover {
-  transform: scale(1.1);
-}
-
 main {
   scroll-behavior: smooth;
 }
-
-p::first-letter {
-  font-size: 24px;
-}
-
 button,
 button::after {
   width: 380px;
@@ -179,4 +170,47 @@ button:hover::after {
     clip-path: var(--slice-1);
     transform: translate(0);
   }
+}
+
+.imageCard {
+  width: 600px;
+  position: relative;
+}
+
+.imageCard > img {
+  width: 600px;
+  height: auto;
+}
+
+.imageCard > div {
+  position: absolute;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 65%
+  );
+  transition: all 0.3s ease-in-out;
+}
+
+.imageCard:hover > div {
+  height: 200px;
+  padding-top: 100px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 65%
+  );
+}
+
+.imageCard > div > p {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
 }
